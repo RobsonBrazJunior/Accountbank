@@ -1,0 +1,6 @@
+@Accountbank.Api_HostAddress = http://localhost:5233
+
+GET {{Accountbank.Api_HostAddress}}/{}/
+Accept: application/json
+
+###
