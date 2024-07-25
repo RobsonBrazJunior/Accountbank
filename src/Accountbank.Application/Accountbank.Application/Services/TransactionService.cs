@@ -13,6 +13,12 @@ public class TransactionService(IUnitOfWork unitOfWork) : ITransactionService
 		return _unitOfWork.TransactionRespository.GetById(id);
 	}
 
+	public IEnumerable<Transaction> GetTransactionsFiltered(Guid userId, int days)
+	{
+		var startDate = DateTime.Now.AddDays(-days);
+		return _unitOfWork.TransactionRespository.GetTransactions(userId).Where(t => t.Date >= startDate).ToList();
+	}
+
 	public IEnumerable<Transaction> GetAll()
 	{
 		return _unitOfWork.TransactionRespository.GetAll();

@@ -10,10 +10,10 @@ namespace Accountbank.Api.Controllers
 	{
 		private readonly ITransactionService _transactionService = transactionService;
 
-		[HttpGet("get-by-id/{id:guid}")]
-		public IActionResult GetById(Guid id)
+		[HttpGet("get-transactions-filtered/{id:guid}/{days:int}")]
+		public IActionResult GetTransactionsFiltered(Guid id, int days)
 		{
-			return Ok(_transactionService.GetById(id));
+			return Ok(_transactionService.GetTransactionsFiltered(id, days));
 		}
 	}
 }
