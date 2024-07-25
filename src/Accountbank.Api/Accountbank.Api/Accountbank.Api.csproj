@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\Accountbank.Shared\Accountbank.Shared\Accountbank.Shared.csproj" />
     <ProjectReference Include="..\..\Accountbank.Application\Accountbank.Application\Accountbank.Application.csproj" />
     <ProjectReference Include="..\..\Accountbank.Infra\Accountbank.Infra.Data\Accountbank.Infra.Data.csproj" />
   </ItemGroup>

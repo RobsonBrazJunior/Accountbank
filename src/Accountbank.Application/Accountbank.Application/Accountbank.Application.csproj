@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\Accountbank.Shared\Accountbank.Shared\Accountbank.Shared.csproj" />
     <ProjectReference Include="..\..\Accountbank.Domain\Accountbank.Domain\Accountbank.Domain.csproj" />
     <ProjectReference Include="..\..\Accountbank.Infra\Accountbank.Infra.Data\Accountbank.Infra.Data.csproj" />
   </ItemGroup>
