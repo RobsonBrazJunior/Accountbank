@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Accountbank.Domain\Accountbank.Domain\Accountbank.Domain.csproj" />
+    <ProjectReference Include="..\..\Accountbank.Infra\Accountbank.Infra.Data\Accountbank.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
