@@ -13,5 +13,6 @@ public class TransactionConfiguration : IEntityTypeConfiguration<Transaction>
 		builder.Property(x => x.Date).HasDefaultValueSql("GETDATE()").ValueGeneratedOnAdd().IsRequired();
 		builder.Property(x => x.TransactionType).HasConversion<int>().IsRequired();
 		builder.Property(x => x.Amount).IsRequired();
+		builder.Property(x => x.UserId).IsRequired().HasDefaultValueSql("NEWID()");
 	}
 }
