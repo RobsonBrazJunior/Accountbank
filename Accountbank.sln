@@ -3,25 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Domain", "01 - Domain", "{E2C929E7-6BAC-4957-9CEB-A418A2562EAD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Domain", "02 - Domain", "{E2C929E7-6BAC-4957-9CEB-A418A2562EAD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accountbank.Domain", "src\Accountbank.Domain\Accountbank.Domain\Accountbank.Domain.csproj", "{9D97F405-B81C-4F55-9A51-28AD46F2F3FF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Infra", "02 - Infra", "{57205425-BA76-4D6E-AE7B-479866E5F1F8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Infra", "03 - Infra", "{57205425-BA76-4D6E-AE7B-479866E5F1F8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accountbank.Infra.Data", "src\Accountbank.Infra\Accountbank.Infra.Data\Accountbank.Infra.Data.csproj", "{E43FDD02-6CC7-4D13-A201-01EC7A75A22B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - API", "04 - API", "{EAEE4CF2-18E6-4D34-9498-2FE3BEAD0471}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - API", "05 - API", "{EAEE4CF2-18E6-4D34-9498-2FE3BEAD0471}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accountbank.Api", "src\Accountbank.Api\Accountbank.Api\Accountbank.Api.csproj", "{26CC79FA-04C0-435F-BF99-CC5090B3F848}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Application", "03 - Application", "{9BDC69BA-856D-44EC-B209-410C587926DC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Application", "04 - Application", "{9BDC69BA-856D-44EC-B209-410C587926DC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accountbank.Application", "src\Accountbank.Application\Accountbank.Application\Accountbank.Application.csproj", "{E744C5ED-B07A-420C-9852-5E77E30D2372}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Shared", "05 - Shared", "{A48AFF45-5AE3-471C-9A8D-5811D01C708E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Shared", "06 - Shared", "{A48AFF45-5AE3-471C-9A8D-5811D01C708E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accountbank.Shared", "shared\Accountbank.Shared\Accountbank.Shared\Accountbank.Shared.csproj", "{CCABECE4-5602-4790-A816-5ED87975AEFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accountbank.Shared", "shared\Accountbank.Shared\Accountbank.Shared\Accountbank.Shared.csproj", "{CCABECE4-5602-4790-A816-5ED87975AEFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{FFD150A4-686C-40E6-BF3D-30BBDD865F4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accountbank.Web", "src\Accountbank.Presentation\Accountbank.Web\Accountbank.Web.csproj", "{5442A43D-C19A-4D60-B01F-70A98F8D795B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{CCABECE4-5602-4790-A816-5ED87975AEFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCABECE4-5602-4790-A816-5ED87975AEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCABECE4-5602-4790-A816-5ED87975AEFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5442A43D-C19A-4D60-B01F-70A98F8D795B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5442A43D-C19A-4D60-B01F-70A98F8D795B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5442A43D-C19A-4D60-B01F-70A98F8D795B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5442A43D-C19A-4D60-B01F-70A98F8D795B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{26CC79FA-04C0-435F-BF99-CC5090B3F848} = {EAEE4CF2-18E6-4D34-9498-2FE3BEAD0471}
 		{E744C5ED-B07A-420C-9852-5E77E30D2372} = {9BDC69BA-856D-44EC-B209-410C587926DC}
 		{CCABECE4-5602-4790-A816-5ED87975AEFB} = {A48AFF45-5AE3-471C-9A8D-5811D01C708E}
+		{5442A43D-C19A-4D60-B01F-70A98F8D795B} = {FFD150A4-686C-40E6-BF3D-30BBDD865F4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {613CFF87-06CC-4D67-BB0D-5CF97B0844A7}
