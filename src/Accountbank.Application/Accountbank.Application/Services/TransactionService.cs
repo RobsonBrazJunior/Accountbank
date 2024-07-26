@@ -38,7 +38,13 @@ public class TransactionService(IUnitOfWork unitOfWork, IPdfGenerator pdfGenerat
 		_unitOfWork.Save();
 	}
 
-	public byte[] GeneratePdfReport(Guid userId, int days)
+    public IEnumerable<Transaction> Transactions(Guid userId, int days)
+    {
+        var startDate = DateTime.Now.AddDays(-days);
+        return _unitOfWork.TransactionRespository.GetTransactions(userId).Where(t => t.Date >= startDate).ToList();
+    }
+
+    public byte[] GeneratePdfReport(Guid userId, int days)
 	{
 		var startDate = DateTime.Now.AddDays(-days);
 		var transactions = _unitOfWork.TransactionRespository.GetTransactions(userId).Where(t => t.Date >= startDate).ToList();

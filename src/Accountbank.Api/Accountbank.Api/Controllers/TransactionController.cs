@@ -9,10 +9,18 @@ public class TransactionController(ITransactionService transactionService) : Con
 {
 	private readonly ITransactionService _transactionService = transactionService;
 
-	[HttpGet("export")]
-	public IActionResult ExportTransactions(Guid userId, int days)
+    [HttpGet()]
+    public IActionResult GetTransactions(int days)
+    
+    {
+        var result= _transactionService.Transactions(Guid.NewGuid(), days);
+        return new JsonResult(result);
+    }
+
+    [HttpGet("export")]
+	public IActionResult ExportTransactions(int days)
 	{
-		var pdfBytes = _transactionService.GeneratePdfReport(userId, days);
+		var pdfBytes = _transactionService.GeneratePdfReport(Guid.NewGuid(), days);
 		return File(pdfBytes, "application/pdf", "extrato.pdf");
 	}
 }

@@ -10,4 +10,5 @@ public interface ITransactionService : IDisposable
 	void Update(Transaction transaction);
 	void Remove(Transaction transaction);
 	byte[] GeneratePdfReport(Guid userId, int days);
+    IEnumerable<Transaction> Transactions(Guid userId, int days);
 }

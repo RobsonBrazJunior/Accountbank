@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accountbank.Shared", "share
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{FFD150A4-686C-40E6-BF3D-30BBDD865F4C}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Accountbank.Web", "src\Accountbank.Presentation\Accountbank.Web\Accountbank.Web.esproj", "{797892D3-89C5-4E78-BB59-7D87493C0354}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,12 @@ Global
 		{CCABECE4-5602-4790-A816-5ED87975AEFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCABECE4-5602-4790-A816-5ED87975AEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCABECE4-5602-4790-A816-5ED87975AEFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797892D3-89C5-4E78-BB59-7D87493C0354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797892D3-89C5-4E78-BB59-7D87493C0354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797892D3-89C5-4E78-BB59-7D87493C0354}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{797892D3-89C5-4E78-BB59-7D87493C0354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797892D3-89C5-4E78-BB59-7D87493C0354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797892D3-89C5-4E78-BB59-7D87493C0354}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +69,7 @@ Global
 		{26CC79FA-04C0-435F-BF99-CC5090B3F848} = {EAEE4CF2-18E6-4D34-9498-2FE3BEAD0471}
 		{E744C5ED-B07A-420C-9852-5E77E30D2372} = {9BDC69BA-856D-44EC-B209-410C587926DC}
 		{CCABECE4-5602-4790-A816-5ED87975AEFB} = {A48AFF45-5AE3-471C-9A8D-5811D01C708E}
+		{797892D3-89C5-4E78-BB59-7D87493C0354} = {FFD150A4-686C-40E6-BF3D-30BBDD865F4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {613CFF87-06CC-4D67-BB0D-5CF97B0844A7}
